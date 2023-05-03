@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid rgba(255, 0, 0, 0.337); */
+}
+::-webkit-scrollbar {
+  display: none;
+}
+:root{
+  font-family: 'Roboto', sans-serif;
+    /* Light Mode */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F2F2F2;
+    --bg-accent: #FF6D00;
+    --text-primary: #333333;
+    --text-secondary: #757575;
+    --button-bg: #FF6D00;
+    --button-text: #FFFFFF;
+}
+
+.App.dark{
+    /* Dark Mode */
+    --bg-primary: #121212;
+    --bg-secondary: #1E1E1E;
+    --bg-accent: #FF6D00;
+    --text-primary: #FFFFFF;
+    --text-secondary: #BDBDBD;
+    --button-bg: #FF6D00;
+    --button-text: #FFFFFF;
+}
+
