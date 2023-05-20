@@ -5,6 +5,14 @@
   box-sizing: border-box;
   /* border: 1px solid rgba(255, 0, 0, 0.337); */
 }
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
 ::-webkit-scrollbar {
   display: none;
 }
@@ -13,21 +21,25 @@
     /* Light Mode */
     --bg-primary: #FFFFFF;
     --bg-secondary: #F2F2F2;
-    --bg-accent: #FF6D00;
+    --bg-accent: #f57c00;
     --text-primary: #333333;
     --text-secondary: #757575;
-    --button-bg: #FF6D00;
+    --button-bg: #0288d1;
+    --button-bg-h: #f57c00;
     --button-text: #FFFFFF;
+    --error: #d32f2f;
 }
 
 .App.dark{
     /* Dark Mode */
     --bg-primary: #121212;
     --bg-secondary: #1E1E1E;
-    --bg-accent: #FF6D00;
+    --bg-accent: #0288d1;
     --text-primary: #FFFFFF;
     --text-secondary: #BDBDBD;
-    --button-bg: #FF6D00;
+    --button-bg: #f57c00;
+    --button-bg-h: #0288d1;
     --button-text: #FFFFFF;
+    --error: #d32f2f;
 }
 

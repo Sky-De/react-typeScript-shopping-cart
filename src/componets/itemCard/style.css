@@ -2,22 +2,21 @@
 
 .itemCard{
     width: 100%;
+    max-width: 350px;
     background-color: var(--bg-secondary);
     border-radius: 5px;
     transition: 0.3s ease;
 }
-.itemCard:hover{
+/* .itemCard:hover{
     transform: scale(1.01);
-}
+} */
 
 .itemCard__img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    max-width: 100%;
-    /* height: 400px; */
-    max-height: 400px;
-    aspect-ratio: 1.5;
-    /* aspect-ratio: 1; */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 .itemCard__info{
@@ -31,4 +30,55 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+}
+
+.itemCard__actions--addToCart {
+    width: 100%;
+    height: 40px;
+    background-color: var(--button-bg);
+    position: relative;
+}
+.itemCard__actions--addToCart::before{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    content: "";
+    background-color: var(--button-bg-h);
+    z-index: 22;
+    transition: width 0.2s ease-in-out;
+}
+.itemCard__actions--addToCart:hover::before  {
+    width: 100%;
+}
+
+.itemCard__actions--addToCart > button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    color: var(--button-text);
+    z-index: 555;
+}
+
+.itemCard__actions__options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.itemCard__actions__options--edit{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.itemCard__actions__options--remove{
+    width: 100%;
+    height: 25px;
+    background-color: var(--error);
+    color: #fff;
+    gap: 1.5rem;
+    align-items: center;
 }

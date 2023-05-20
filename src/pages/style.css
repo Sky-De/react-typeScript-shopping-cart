@@ -20,7 +20,16 @@
 .store__list {
     /* media */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     gap: 2rem;
     list-style: none;
+    justify-content: center;
+}
+
+@media screen and (min-width:1200px) {
+    .store__list {
+            justify-content: flex-start;
+        }
+    
 }
