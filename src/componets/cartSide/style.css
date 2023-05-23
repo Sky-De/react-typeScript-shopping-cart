@@ -1,0 +1,22 @@
+.Cart {
+    position: absolute;
+    background-color: var(--bg-side);
+    /* background-color: fade(var(--bg-secondary), 50%); */
+    height: 100vh;
+    top: 70px;
+    width: 75%;
+    right: -75%;
+    z-index: 1055;
+    transition: right 0.3s ease;
+    color: var(--text-primary);
+}
+
+@media screen and (min-width:1200px) {
+  .Cart {
+       width: 35%;
+       right: -35%;
+    } 
+}
+.Cart.active {
+    right: 0px;
+}

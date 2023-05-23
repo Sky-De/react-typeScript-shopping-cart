@@ -21,6 +21,7 @@ button:focus {
     /* Light Mode */
     --bg-primary: #FFFFFF;
     --bg-secondary: #F2F2F2;
+    --bg-side: #f2f2f2eb;
     --bg-accent: #f57c00;
     --text-primary: #333333;
     --text-secondary: #757575;
@@ -34,6 +35,7 @@ button:focus {
     /* Dark Mode */
     --bg-primary: #121212;
     --bg-secondary: #1E1E1E;
+    --bg-side: #1e1e1eeb;
     --bg-accent: #0288d1;
     --text-primary: #FFFFFF;
     --text-secondary: #BDBDBD;

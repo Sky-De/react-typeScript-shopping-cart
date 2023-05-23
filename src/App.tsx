@@ -1,13 +1,17 @@
 import './App.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { About, Home, Store } from './pages';
+import { useShoppingCart } from './context/shoppingCartContext';
+import CartSide from './componets/cartSide/CartSide';
 
 function App() { 
   const [isDark, setIsDark] = useState<boolean>(true);
+  const [isActive, setIsActive] = useState<boolean>(false);
   const handleToggleMode = () => setIsDark(!isDark);
-  // temperary
-  const cartItemsNumber = 0;
+  const handleToggleSideCart = () => setIsActive(!isActive);
+  
+  const { getItemsCount } = useShoppingCart();
 
   return (
     <div className={`App ${isDark ? "dark" : ""}`}>
@@ -20,12 +24,13 @@ function App() {
               <Link to="/store" className='header__nav--link'>Store</Link>
               <Link to="/about" className='header__nav--link'>About</Link>
             </nav>
-            <div className="header__content--cart">
+            <div onClick={() => handleToggleSideCart()} className="header__content--cart">
               <i className='bx bxs-cart-add' ></i>
-              <span>{cartItemsNumber}</span>
+              <span>{getItemsCount()}</span>
             </div>
         </div>
       </header>
+      <CartSide isActive={isActive}/>
 
       <Routes>
         <Route path='/' element={<Home/>}/>
