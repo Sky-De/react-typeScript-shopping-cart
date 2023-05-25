@@ -20,12 +20,10 @@
     align-items: center;
 }
 
-.header__nav {}
-
 .header__nav--link {
     color: var(--text-primary);
     text-decoration: none;
-    margin-left: 1rem;
+    margin-left: 2rem;
 
 }
 
@@ -50,4 +48,8 @@
     padding: 0.10rem 0.35rem;
     top: calc(100% - 10px);
     left: 0;
+}
+
+.active {
+    color: var(--text-secondary);
 }
