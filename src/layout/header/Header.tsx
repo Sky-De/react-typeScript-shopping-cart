@@ -1,13 +1,13 @@
 import "./style.css";
 import { Link, NavLink } from "react-router-dom";
-import { useActions } from "../../context/ActionsContext";
+import { useHeaderActions } from "../../context/HeaderActionsContext";
 import { useShoppingCart } from "../../context/shoppingCartContext";
 
 const Header = () => {
-  const { isDark, dispatch } = useActions();
+  const { isDark, dispatch } = useHeaderActions();
   const handleToggleMode = () => dispatch({type:'TOGGLE_MODE'});
   const handleToggleSideCart = () => dispatch({type: "TOGGLE_SIDE_CART"});
-  const { getItemsCount } = useShoppingCart();
+  const { cartQuantity } = useShoppingCart();
   return (
     <header className="header">
         <div className="header__content">
@@ -19,7 +19,7 @@ const Header = () => {
             </nav>
             <div onClick={() => handleToggleSideCart()} className="header__content--cart">
               <i className='bx bxs-cart-add' ></i>
-              <span>{getItemsCount()}</span>
+              <span>{cartQuantity}</span>
             </div>
         </div>
       </header>

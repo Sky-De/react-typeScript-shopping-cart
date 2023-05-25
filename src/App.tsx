@@ -1,14 +1,12 @@
 import './App.css'
-import { useState } from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { About, Home, Store } from './pages';
-import { useShoppingCart } from './context/shoppingCartContext';
-import { useActions } from './context/ActionsContext';
+import { useHeaderActions } from './context/HeaderActionsContext';
 import SideCart from './layout/sideCart/SideCart';
 import Header from './layout/header/Header';
 
 function App() { 
-  const { isDark } = useActions();
+  const { isDark } = useHeaderActions();
   
   return (
     <div role='application' className={`App ${isDark ? "dark" : ""}`}>

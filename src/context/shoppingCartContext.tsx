@@ -1,10 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import { CartItem, ProviderProps, ShoppingCartContextType } from "../types/itemType";
 
-
-
-
-
 const ShoppingCartContext = createContext({} as ShoppingCartContextType);
 
 export function useShoppingCart() {
@@ -20,11 +16,7 @@ export function ShoppingCartProvider({ children } : ProviderProps ) {
     const getItemQuantity = (id: number) => cartItems.find(item => item.id === id)?.quantity || 0;
 
     // const getItemsCount = () => cartItems.length;
-    const getItemsCount = () => {
-        let count = 0;
-        cartItems.forEach(item => count += item.quantity);
-        return count;
-    };
+    const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0);
 
     const increaseCartQuantity = (id: number) => {
         const itemExist = cartItems.find(item => item.id === id);
@@ -45,12 +37,13 @@ export function ShoppingCartProvider({ children } : ProviderProps ) {
     return (
         <ShoppingCartContext.Provider
          value={{ 
-            getCartItems, 
             getItemQuantity, 
-            getItemsCount, 
             increaseCartQuantity, 
             decreaseCartQuantity, 
-            removeFromCart}}>{children}      
+            removeFromCart,
+            cartQuantity,
+            cartItems,
+            }}>{children}      
         </ShoppingCartContext.Provider>
     )
 }

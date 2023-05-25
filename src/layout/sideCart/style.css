@@ -2,11 +2,11 @@
     position: absolute;
     background-color: var(--bg-side);
     /* background-color: fade(var(--bg-secondary), 50%); */
-    height: 100vh;
-    top: 70px;
+    height: calc(100vh - var(--header-hight));
+    top: 0;
     width: 75%;
     right: -75%;
-    z-index: 1055;
+    z-index: 5;
     transition: right 0.3s ease;
     color: var(--text-primary);
 }

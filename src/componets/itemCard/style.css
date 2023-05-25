@@ -45,7 +45,7 @@
     height: 100%;
     content: "";
     background-color: var(--button-bg-h);
-    z-index: 22;
+    z-index: 3;
     transition: width 0.2s ease-in-out;
 }
 .itemCard__actions--addToCart:hover::before  {
@@ -58,7 +58,7 @@
     height: 40px;
     background-color: transparent;
     color: var(--button-text);
-    z-index: 555;
+    z-index: 4;
 }
 
 .itemCard__actions__options{

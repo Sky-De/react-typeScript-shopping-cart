@@ -29,6 +29,7 @@ button:focus {
     --button-bg-h: #f57c00;
     --button-text: #FFFFFF;
     --error: #d32f2f;
+    --header-hight: 70px;
 }
 
 .App.dark{

@@ -7,7 +7,6 @@ export interface itemType {
     imgUrl: string;
 }
 
-
 export interface ProviderProps  {
     children: ReactNode;
 }
@@ -23,12 +22,27 @@ export interface CartItem {
     quantity: number
 }
 
-
 export interface ShoppingCartContextType {
-    getCartItems: () => CartItem[]
-    getItemQuantity: (id: number) => number
-    getItemsCount: () => number
-    increaseCartQuantity: (id: number) => void
-    decreaseCartQuantity: (id: number) => void
-    removeFromCart: (id: number) => void
+    getItemQuantity: (id: number) => number;
+    increaseCartQuantity: (id: number) => void;
+    decreaseCartQuantity: (id: number) => void;
+    removeFromCart: (id: number) => void;
+    cartItems: CartItem[];
+    cartQuantity: number;
+}
+
+
+// ---HeaderActionsTypes
+export interface State {
+    isDark: boolean;
+    isActive: boolean;
+}
+
+export type Actions = 
+ | {type: "TOGGLE_MODE"}
+ | {type: "TOGGLE_SIDE_CART"}
+
+export interface HeaderActionsContextType {
+    state: State;
+    dispatch: React.Dispatch<Actions>;
 }

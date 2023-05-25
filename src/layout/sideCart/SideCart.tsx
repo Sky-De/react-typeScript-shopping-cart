@@ -1,17 +1,16 @@
-import { useActions } from "../../context/ActionsContext";
+import { useHeaderActions } from "../../context/HeaderActionsContext";
 import { useShoppingCart } from "../../context/shoppingCartContext";
 import "./style.css";
 
 
 const SideCart = () => {
-  const { isActive } = useActions();
-  const { getCartItems } = useShoppingCart();
-  const cartItems = getCartItems();
+  const { isActive, dispatch } = useHeaderActions();
+  const { cartItems } = useShoppingCart();
   
   return (
-    <aside className={`Cart ${isActive ? "active" : ""}`}>
+      <aside className={`Cart ${isActive ? "active" : ""}`}>
         { cartItems?.map(item => <h4>{item.id}</h4>)}
-    </aside>
+      </aside>
   )
 }
 

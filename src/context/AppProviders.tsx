@@ -1,16 +1,16 @@
 import { BrowserRouter } from "react-router-dom";
 import { ShoppingCartProvider } from "./shoppingCartContext";
 import { ProviderProps } from "../types/itemType";
-import { ActionsProvider } from "./ActionsContext";
+import { HeaderActionsProvider } from "./HeaderActionsContext";
 
 const AppProviders = ({ children }: ProviderProps ) => {
   return (
     <ShoppingCartProvider>
-      <ActionsProvider>
+      <HeaderActionsProvider>
        <BrowserRouter>
          { children }
        </BrowserRouter>
-      </ActionsProvider>
+      </HeaderActionsProvider>
     </ShoppingCartProvider>
   )
 }

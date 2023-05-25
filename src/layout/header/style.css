@@ -2,11 +2,12 @@
     background-color: var(--bg-secondary);
     z-index: 2;
     /* media */
-    height: 70px;
+    height: var(--header-hight);
     width: 100%;
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 6;
 }
 
 .header__content {
