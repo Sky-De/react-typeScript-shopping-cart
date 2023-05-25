@@ -1,9 +1,10 @@
+import { useActions } from "../../context/ActionsContext";
 import { useShoppingCart } from "../../context/shoppingCartContext";
-import { CartSideProps } from "../../types/itemType";
 import "./style.css";
 
 
-const CartSide = ({ isActive }:CartSideProps) => {
+const SideCart = () => {
+  const { isActive } = useActions();
   const { getCartItems } = useShoppingCart();
   const cartItems = getCartItems();
   
@@ -14,4 +15,4 @@ const CartSide = ({ isActive }:CartSideProps) => {
   )
 }
 
-export default CartSide
+export default SideCart

@@ -1,21 +1,11 @@
 import { createContext, useContext, useState } from "react";
-import { ProviderProps } from "../types/itemType";
+import { CartItem, ProviderProps, ShoppingCartContextType } from "../types/itemType";
 
-interface CartItem {
-    id: number
-    quantity: number
-}
 
-interface ShoppingCartContext {
-    getCartItems: () => CartItem[]
-    getItemQuantity: (id: number) => number
-    getItemsCount: () => number
-    increaseCartQuantity: (id: number) => void
-    decreaseCartQuantity: (id: number) => void
-    removeFromCart: (id: number) => void
-}
 
-const ShoppingCartContext = createContext({} as ShoppingCartContext);
+
+
+const ShoppingCartContext = createContext({} as ShoppingCartContextType);
 
 export function useShoppingCart() {
     return useContext(ShoppingCartContext);
@@ -24,8 +14,6 @@ export function useShoppingCart() {
 
 export function ShoppingCartProvider({ children } : ProviderProps ) {
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
-    console.log(cartItems);
-    
 
     const getCartItems = () => cartItems;
 
