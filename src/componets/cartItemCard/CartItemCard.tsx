@@ -12,14 +12,14 @@ const CartItemCard = ({ id, quantity }: CartCardPropsType ) => {
   const handleRemoveItem = () => removeFromCart(id); 
 
   return (
-    <li className="item">
-        <img className="itemCard__img" loading="lazy" src={item.imgUrl} alt={item.name} />
-        <div className="item__info">
+    <li className="CartitemCard">
+        <img className="CartitemCard__img" loading="lazy" src={item.imgUrl} alt={item.name} />
+        <div className="CartitemCard__info">
             <h4>{item.name} <span>x{quantity}</span></h4>
             <p>${item.price}</p>
         </div>
-        <div className="item__action">
-            <h4>${item.price * quantity}</h4>
+        <div className="CartitemCard__action">
+            <h4>${(item.price * quantity).toLocaleString()}</h4>
             <button onClick={handleRemoveItem}>x</button>
         </div>
         

@@ -10,7 +10,7 @@ const ItemCard:React.FC<itemType> = ({ id, name, price, imgUrl }) => {
         <img className="itemCard__img" loading="lazy" src={imgUrl} alt={name} />
         <div className="itemCard__info">
             <p>{name}</p>
-            <p>$ {price}</p>
+            <p>$ {price.toLocaleString()}</p>
         </div>
         <div className="itemCard__actions">
           {quantity > 0 ? <div className="itemCard__actions__options">

@@ -1,0 +1,41 @@
+
+
+.CartitemCard{
+    display: flex;
+    color: var(--text-primary);
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--text-secondary);
+}
+
+.CartitemCard__img{
+    height: 75px;
+    aspect-ratio: 1;
+}
+
+.CartitemCard__info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.25rem;
+    padding-left: 0.5rem;
+    justify-content: center;
+}
+
+.CartitemCard__info  span {
+    font-size: .75rem;
+    color: var(--text-secondary);
+}
+
+.CartitemCard__action{
+    display: flex;
+    align-items: center;
+    padding-right: 0.25rem;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+}
+.CartitemCard__action > button {
+    padding: 0.2rem 0.3rem;
+    background-color: var(--bg-accent);
+    color: var(--button-text);
+    border-radius: 2px;
+}
