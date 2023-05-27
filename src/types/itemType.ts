@@ -46,3 +46,10 @@ export interface HeaderActionsContextType {
     state: State;
     dispatch: React.Dispatch<Actions>;
 }
+
+
+
+export interface CartCardPropsType {
+    id: number;
+    quantity: number;
+}

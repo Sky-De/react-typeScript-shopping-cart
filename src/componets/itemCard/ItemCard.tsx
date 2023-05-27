@@ -2,8 +2,7 @@ import { itemType } from "../../types/itemType"
 import "./style.css";
 import { useShoppingCart } from "../../context/shoppingCartContext";
 const ItemCard:React.FC<itemType> = ({ id, name, price, imgUrl }) => {
-  const { getItemQuantity, decreaseCartQuantity, increaseCartQuantity, removeFromCart, getItemsCount } = useShoppingCart();
-  
+  const { getItemQuantity, decreaseCartQuantity, increaseCartQuantity, removeFromCart } = useShoppingCart();
   const quantity = getItemQuantity(id);
   
   return (
