@@ -4,7 +4,7 @@ import { About, Store } from './pages';
 import { useHeaderActions } from './context/HeaderActionsContext';
 import SideCart from './layout/sideCart/SideCart';
 import Header from './layout/header/Header';
-import ErrorPage from './pages/errorPage';
+import ErrorPage from './pages/ErrorPage';
 
 function App() { 
   const { isDark } = useHeaderActions();
