@@ -20,4 +20,4 @@ const SideCart = () => {
   )
 }
 
-export default SideCart
+export default SideCart;

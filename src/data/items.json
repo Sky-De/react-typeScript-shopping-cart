@@ -1,50 +1,56 @@
 [
   {
     "id": 1,
-    "name": "Book",
-    "price": 10.99,
-    "imgUrl": "/images/book.jpg"
+    "name": "ASUS Vivobook Go",
+    "price": 199.99,
+    "imgUrl": "/images/1.jpg"
   },
   {
     "id": 2,
-    "name": "Computer",
-    "price": 1199,
-    "imgUrl": "/images/computer.jpg"
+    "name": "ASUS VivoBook 14 Slim",
+    "price": 256.14,
+    "imgUrl": "/images/2.jpg"
   },
   {
     "id": 3,
-    "name": "Banana",
-    "price": 1.05,
-    "imgUrl": "/images/banana.jpg"
+    "name": "ASUS ROG Strix G17",
+    "price": 1769.99,
+    "imgUrl": "/images/3.jpg"
   },
   {
     "id": 4,
-    "name": "Car",
-    "price": 14000,
-    "imgUrl": "/images/car.jpg"
+    "name": "ASUS VivoBook Pro 16X",
+    "price": 1399,
+    "imgUrl": "/images/4.jpg"
   },
   {
-    "id": 11,
-    "name": "Book",
-    "price": 10.99,
-    "imgUrl": "/images/book.jpg"
+    "id": 5,
+    "name": "ASUS Vivobook Go 12",
+    "price": 176,
+    "imgUrl": "/images/5.jpg"
   },
   {
-    "id": 12,
-    "name": "Computer",
-    "price": 1199,
-    "imgUrl": "/images/computer.jpg"
+    "id": 6,
+    "name": "ASUS ROG Strix G16",
+    "price": 1329.99,
+    "imgUrl": "/images/6.jpg"
   },
   {
-    "id": 13,
-    "name": "Banana",
-    "price": 1.05,
-    "imgUrl": "/images/banana.jpg"
+    "id": 7,
+    "name": "ASUS ZenBook 14",
+    "price": 799.99,
+    "imgUrl": "/images/7.jpg"
   },
   {
-    "id": 14,
-    "name": "Car",
-    "price": 14000,
-    "imgUrl": "/images/car.jpg"
+    "id": 8,
+    "name": "ASUS Newest Zenbook",
+    "price": 1400,
+    "imgUrl": "/images/8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "ASUS Vivobook S 15",
+    "price": 1549,
+    "imgUrl": "/images/9.jpg"
   }
 ]

@@ -1,6 +1,7 @@
 import ItemCard from "../componets/itemCard/ItemCard";
 import storeItems from "../data/items.json";
 import { itemType } from "../types/itemType";
+import "./style.css";
 const Store = () => {
   const items: itemType[] = storeItems;
   return (

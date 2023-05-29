@@ -13,8 +13,7 @@ const Header = () => {
         <div className="header__content">
             <i className={`bx ${isDark ? "bx-sun" : "bx-moon"}`} onClick={handleToggleMode}></i>
             <nav className='header__nav'>
-              <NavLink to="/" className='header__nav--link'>Home</NavLink>
-              <NavLink to="/store" className='header__nav--link'>Store</NavLink>
+              <NavLink to="/" className='header__nav--link'>Store</NavLink>
               <NavLink to="/about" className='header__nav--link'>About</NavLink>
             </nav>
             <div onClick={() => handleToggleSideCart()} className="header__content--cart">

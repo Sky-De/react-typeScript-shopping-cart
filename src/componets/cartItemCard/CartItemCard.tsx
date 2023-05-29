@@ -10,6 +10,8 @@ const CartItemCard = ({ id, quantity }: CartCardPropsType ) => {
   const { removeFromCart } = useShoppingCart();
 
   const handleRemoveItem = () => removeFromCart(id); 
+  const totalPrice = (item.price * quantity).toLocaleString();
+
 
   return (
     <li className="CartitemCard">
@@ -19,7 +21,7 @@ const CartItemCard = ({ id, quantity }: CartCardPropsType ) => {
             <p>${item.price}</p>
         </div>
         <div className="CartitemCard__action">
-            <h4>${(item.price * quantity).toLocaleString()}</h4>
+            <h4>${totalPrice}</h4>
             <button onClick={handleRemoveItem}>x</button>
         </div>
         

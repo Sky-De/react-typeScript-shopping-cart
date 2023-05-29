@@ -1,9 +1,10 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom';
-import { About, Home, Store } from './pages';
+import { About, Store } from './pages';
 import { useHeaderActions } from './context/HeaderActionsContext';
 import SideCart from './layout/sideCart/SideCart';
 import Header from './layout/header/Header';
+import ErrorPage from './pages/errorPage';
 
 function App() { 
   const { isDark } = useHeaderActions();
@@ -13,9 +14,9 @@ function App() {
       <Header/>
       <SideCart/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/store' element={<Store/>}/>
+        <Route path='/' element={<Store/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='*' element={<ErrorPage/>}/>
       </Routes>
     </div>
   )
