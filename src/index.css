@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,33 +16,32 @@ button:focus {
 ::-webkit-scrollbar {
   display: none;
 }
-:root{
-  font-family: 'Roboto', sans-serif;
-    /* Light Mode */
-    --bg-primary: #FFFFFF;
-    --bg-secondary: #F2F2F2;
-    --bg-side: #f2f2f2f5;
-    --bg-accent: #f57c00;
-    --text-primary: #333333;
-    --text-secondary: #757575;
-    --button-bg: #0288d1;
-    --button-bg-h: #f57c00;
-    --button-text: #FFFFFF;
-    --error: #d32f2f;
-    --header-hight: 70px;
+:root {
+  font-family: "Roboto", sans-serif;
+  /* Light Mode */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f2f2f2;
+  --bg-side: #f2f2f2f5;
+  --bg-accent: #f57c00;
+  --text-primary: #333333;
+  --text-secondary: #757575;
+  --button-bg: #0288d1;
+  --button-bg-h: #f57c00;
+  --button-text: #ffffff;
+  --error: #d32f2f;
+  --header-hight: 70px;
 }
 
-.App.dark{
-    /* Dark Mode */
-    --bg-primary: #121212;
-    --bg-secondary: #1E1E1E;
-    --bg-side: #1f1f1ffb;
-    --bg-accent: #0288d1;
-    --text-primary: #FFFFFF;
-    --text-secondary: #BDBDBD;
-    --button-bg: #f57c00;
-    --button-bg-h: #0288d1;
-    --button-text: #FFFFFF;
-    --error: #d32f2f;
+.App.dark {
+  /* Dark Mode */
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-side: #1f1f1ffb;
+  --bg-accent: #0288d1;
+  --text-primary: #ffffff;
+  --text-secondary: #bdbdbd;
+  --button-bg: #f57c00;
+  --button-bg-h: #0288d1;
+  --button-text: #ffffff;
+  --error: #d32f2f;
 }
-

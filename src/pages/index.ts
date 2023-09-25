@@ -1,7 +1,4 @@
-import About from './About';
-import Store from './Store';
+import About from "./About";
+import Store from "./Store";
 
-export{
- About,
- Store, 
-}
+export { About, Store };
