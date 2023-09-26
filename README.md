@@ -13,14 +13,15 @@ Feel free to give it a start 🌟
 
 
 ## Tech Stack
-- Vite ⚡
-- React.js ⚛️
-- Functional components 🔄
-- react-router-dom 🌐
-- Typescript 📜
-- Pure CSS 🎨
-- Box icons 📦
-- Fully responsive 📱
+- ⚡ Vite 
+- ⚛️ React.js 
+- 🔄 Functional components 
+- 🌐 react-router-dom 
+- 📜Typescript 
+- 🎨Pure CSS 
+- 📦 Box icons 
+- 📱 Fully responsive 
+- 🌙 Dark / ☀️ Light mode 
 
 ## Demo
 
@@ -85,6 +86,9 @@ cd your-repo-name
 
 # Install dependencies
 npm install
+
+# Add .env
+REACT_APP_RAPID_API_KEY
 
 # Run the project
 npm run dev
