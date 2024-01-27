@@ -1,27 +1,26 @@
 # Shopping Cart
-
 Feel free to give it a start 🌟
-
+![line]
 ## Table of Contents
 
 - [Tech Stack](#tech-stack)
 - [Demo](#demo)
-- [Screenshots](#screenshots)
+- [Preview](#preview)
 - [About](#about)
 - [Installation](#installation)
 - [Contact](#contact)
 
+![line]
 
 ## Tech Stack
-- ⚡ Vite 
-- ⚛️ React.js 
-- 🔄 Functional components 
-- 🌐 react-router-dom 
-- 📜Typescript 
-- 🎨Pure CSS 
-- 📦 Box icons 
-- 📱 Fully responsive 
-- 🌙 Dark / ☀️ Light mode 
+![Static Badge](https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript)
+![Static Badge](https://img.shields.io/badge/React-black?style=for-the-badge&logo=react)
+![Static Badge](https://img.shields.io/badge/CSS-black?style=for-the-badge&logo=CSS3)
+![Static Badge](https://img.shields.io/badge/context%2Fapi-black?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/Vite-black?style=for-the-badge&logo=vite)
+![Static Badge](https://img.shields.io/badge/Netlify-black?style=for-the-badge&logo=netlify)
+
+![line]
 
 ## Demo
 
@@ -29,19 +28,21 @@ Take a look at the live project deployed on Netlify
 
 [Live Demo](https://shopping-cart-typescript-skyde.netlify.app)
 
-![Demo](demo.gif)
+![line]
 
-## Screenshots
+## Preview
 
-**DESKTOP**
+**-----------------------------------------DESKTOP-----------------------------------------------------**
 
-![chrome-capture-2023-8-26-min](https://github.com/Sky-De/react-typeScript-shopping-cart/assets/79264045/6a878390-a4cb-41aa-ab6e-f5c58a6eeb31)
+<img src="https://github.com/Sky-De/react-typeScript-shopping-cart/assets/79264045/6a878390-a4cb-41aa-ab6e-f5c58a6eeb31" width="80%">
 
 
-**Mobile**
+**-----------------------------------------Mobile-------------------------------------------------------**
 
-![chrome-capture-2023-8-26 (1)-min](https://github.com/Sky-De/react-typeScript-shopping-cart/assets/79264045/c0716e44-d730-46af-8176-3ea0a6af6d62)
+<img src="https://github.com/Sky-De/react-typeScript-shopping-cart/assets/79264045/c0716e44-d730-46af-8176-3ea0a6af6d62" width="270">
 
+
+![line]
 
 ## About
 
@@ -71,7 +72,7 @@ CartMaster goes beyond being a shopping cart; it's your shopping companion, tail
 
 👉 Experience CartMaster today and revolutionize the way you shop online. Whether you're a frequent online shopper or just getting started, CartMaster is the ultimate tool to elevate your shopping game.
 
-
+![line]
 
 ## Installation
 
@@ -94,7 +95,9 @@ REACT_APP_RAPID_API_KEY
 npm run dev
 ```
 
+![line]
 
+[line]: https://user-images.githubusercontent.com/75939390/137615281-3a875960-92cc-407f-97fe-fd2319bdb252.png
 ## Contact
 
 **skyDe**
